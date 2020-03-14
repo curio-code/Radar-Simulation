@@ -1,4 +1,4 @@
-# Radar-Simulation
+# Radar Simulation
 
 ![Alt Text](https://github.com/curio-code/Radar-Simulation/blob/master/media/output.gif)
 
@@ -34,7 +34,7 @@ trajectory(chaseCar, [25 0; roadCenters(2:end,:)] - [0 1.8], 25); % On right lan
 ```
 4. Attaching 6 RADARs on the Ego Vehicle
 ```
-sensors{1} = radarDetectionGenerator('SensorIndex', 1, 'Height', 0.2, 'MaxRange', 174, ... 
+sensors{1} = radarDetectionGenerator('SensorIndex', 1, 'Height', 0.2, 'MaxRange', 174, ...
     'SensorLocation', [egoCar.Wheelbase + egoCar.FrontOverhang, 0], 'FieldOfView', [20, 5]);
 ```
 

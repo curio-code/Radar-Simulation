@@ -1,4 +1,4 @@
-# Radar 11Simulation
+# Radar Simulation
 
 ![Alt Text](https://github.com/curio-code/Radar-Simulation/blob/master/media/output.gif)
 

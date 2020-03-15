@@ -1,4 +1,4 @@
-# Radar Simulation
+# Radar 11Simulation
 
 ![Alt Text](https://github.com/curio-code/Radar-Simulation/blob/master/media/output.gif)
 
@@ -41,7 +41,9 @@ sensors{1} = radarDetectionGenerator('SensorIndex', 1, 'Height', 0.2, 'MaxRange'
 ## Create a Kalman filter for tracking
 ```
 H = [1 0 0 0; 0 0 1 0; 0 1 0 0; 0 0 0 1];
-filter = trackingKF('MotionModel', '2D Constant Velocity', 'State', H'*detection.Measurement, 'MeasurementModel', H, 'StateCovariance', H'*detection.MeasurementNoise*H, 'MeasurementNoise', detection.MeasurementNoise);
+filter = trackingKF('MotionModel', '2D Constant Velocity', 'State', H'*detection.Measurement,
+'MeasurementModel', H, 'StateCovariance', H'*detection.MeasurementNoise*H, 'MeasurementNoise',
+detection.MeasurementNoise);
 ```
 ### Full flow of the code
 ![Alt Text](https://github.com/curio-code/Radar-Simulation/blob/master/media/image6.png)

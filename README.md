@@ -45,5 +45,5 @@ filter = trackingKF('MotionModel', '2D Constant Velocity', 'State', H'*detection
 'MeasurementModel', H, 'StateCovariance', H'*detection.MeasurementNoise*H, 'MeasurementNoise',
 detection.MeasurementNoise);
 ```
-### Full flow of the code
+### Cummulative flow of the code
 ![Alt Text](https://github.com/curio-code/Radar-Simulation/blob/master/media/image6.png)
